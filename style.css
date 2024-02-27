@@ -54,7 +54,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 6rem;
 }
 
 .card__description {
@@ -187,6 +186,7 @@ svg circle {
 	from {
 		transform: rotate(-90deg);
 	}
+
 	to {
 		transform: rotate(270deg);
 	}
@@ -199,4 +199,17 @@ svg circle {
 
 .hidden {
 	display: none;
+}
+
+@media (orientation:landscape) {
+	.container {
+		padding: 0;
+	}
+
+	.card {
+		flex-direction: row;
+		padding: 0;
+		min-width: 568px;
+		min-height: 320px;
+	}
 }
