@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тестовое задание Ozon Fintech</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js" defer></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card__percent" id="card__percent">
+				<svg>
+					<circle cx="120" cy="120" r="90" stroke="#3F44FD" id="circle"></circle>
+				</svg>
+				<div class="circle"></div>
+				<div class="circle circle__medium"></div>
+				<div class="circle circle__small"></div>
+			</div>
+			<div class="card__description">
+				<div class="form">
+						<input type="text" placeholder="50" class="input" id="percent" onkeypress="return isNumeric(event)" maxlength="3">
+						<p>Value</p>
+						<input type="checkbox" class="switch" id="animate" ></input>
+						<p>Animate</p>
+						<input type="checkbox" class="switch" id="hide"></input>
+						<p>Hide</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
